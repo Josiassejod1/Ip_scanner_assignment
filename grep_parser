@@ -1,0 +1,6 @@
+#!/bin/bash
+#Dalvin Josias Sejour
+
+ grep "Failed password for root" auth.log | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" | sort -u > unknown_ip.txt
+
+
